@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>HeadItem.qml</file>
+        <file>Menu.qml</file>
+        <file>Pitchs.qml</file>
+        <file>Pitch.qml</file>
+        <file>FootMenu.qml</file>
+        <file>Players.qml</file>
+        <file>Insurs.qml</file>
+        <file>Games.qml</file>
+        <file>Member.qml</file>
+        <file>GameHead.qml</file>
+        <file>Player.qml</file>
+    </qresource>
+</RCC>
