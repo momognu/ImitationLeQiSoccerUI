@@ -1,6 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
+#define TAG "hlsapp"
+
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
