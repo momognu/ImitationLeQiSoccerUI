@@ -87,6 +87,22 @@ Item {
                 }
             }
         }
+
+        Rectangle {
+            id: rectMons
+            anchors.top: rectImgs.bottom
+            width: parent.width
+            height: labMon.height + 20/800*itemPlayer.height
+            Text {
+                id: labMon
+                text: "服务价格"
+                anchors.leftMargin: 10/480*itemPlayer.width
+                anchors.left: parent.left
+                anchors.verticalCenter: parent.verticalCenter
+                color: "#666666"
+                font.pointSize: 15
+            }
+        }
     }
 
     Rectangle {
