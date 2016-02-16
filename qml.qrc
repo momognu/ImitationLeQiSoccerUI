@@ -12,5 +12,6 @@
         <file>Member.qml</file>
         <file>GameHead.qml</file>
         <file>Player.qml</file>
+        <file>Register.qml</file>
     </qresource>
 </RCC>
