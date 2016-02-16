@@ -81,6 +81,15 @@ Item {
                     text: "获取验证码"
                 }
             }
+
+            Rectangle {
+                id: rectDetail
+                anchors.top: txfTestCode.bottom
+                anchors.topMargin: 10/800*itemRegister.height
+                width: txfPhone.width
+                anchors.horizontalCenter: parent.horizontalCenter
+                height: 400/800*itemRegister.height
+            }
         }
     }
 }
