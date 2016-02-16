@@ -102,6 +102,7 @@ Item {
                 color: "#666666"
                 font.pointSize: 15
             }
+
             Text {
                 id: txtMon
                 anchors.left: labMon.right
