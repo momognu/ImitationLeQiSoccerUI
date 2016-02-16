@@ -45,7 +45,7 @@ Item {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: parent.top
                 anchors.topMargin: 6/800*itemRegister.height
-                width: 120/480*itemRegister.width
+                width: 110/480*itemRegister.width
                 height: width
             }
 
