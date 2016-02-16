@@ -30,7 +30,7 @@ Item {
         width: parent.width
         height: parent.height - itemHead.height - rectFoot.height
         contentWidth: parent.width
-        contentHeight: parent.height + 360
+        contentHeight: rectMons.height + rectImgs.height + 20/800*itemPlayer.height
         Rectangle {
             id: rectImgs
             z: 1000
@@ -92,7 +92,7 @@ Item {
             id: rectMons
             anchors.top: rectImgs.bottom
             width: parent.width
-            height: labMon.height + 20/800*itemPlayer.height
+            height: labMon.height + 40/800*itemPlayer.height
             Text {
                 id: labMon
                 text: "服务价格"
@@ -102,11 +102,23 @@ Item {
                 color: "#666666"
                 font.pointSize: 15
             }
-
             Text {
                 id: txtMon
                 anchors.left: labMon.right
-                anchors.leftMargin: 20/480*itemPlayer.width
+                anchors.leftMargin: 40/480*itemPlayer.width
+                anchors.verticalCenter: parent.verticalCenter
+                text: "¥ 150元／小时"
+                font.pointSize: 15
+                color: "#333333"
+            }
+            Text {
+                id: txtCount
+                anchors.right: parent.right
+                anchors.rightMargin: 10/480*itemPlayer.width
+                anchors.verticalCenter: parent.verticalCenter
+                text: "约 5次"
+                font.pointSize: 15
+                color: "#333333"
             }
         }
     }
