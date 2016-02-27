@@ -37,7 +37,7 @@ Item {
                 z: 1000
                 id: imgHead
                 anchors.centerIn: parent
-                width: 100/480*itemMember.width
+                width: 100/800*itemMember.height
                 height: width
                 source: "images/head.jpg"
             }
@@ -45,12 +45,12 @@ Item {
                 z: 1001
                 id: rectBorder
                 anchors.centerIn: parent
-                width: 160/480*itemMember.width
+                width: 160/800*itemMember.height
                 height: width
-                border.width: 36/480*itemMember.width
+                border.width: 36/800*itemMember.height
                 border.color: "#E14546"
                 color: "#00000000"
-                radius: 360/480*itemMember.width
+                radius: 360/800*itemMember.height
             }
             Text {
                 z: 1002

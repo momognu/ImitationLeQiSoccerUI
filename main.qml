@@ -76,32 +76,44 @@ Window {
 
         Component.onCompleted: {
             console.log(Qt.platform.os)
-            itemPitchs.load()
+            var pitchs = itemPitchs.createObject(itemMain)
+            pitchs.load()
+            stackMain.initialItem = pitchs
         }
 
-        Pitchs {
+        Component {
             id: itemPitchs
-            visible: false
+            Pitchs {
+                visible: false
+            }
         }
 
-        Players {
+        Component {
             id: itemPlayers
-            visible: false
+            Players {
+                visible: false
+            }
         }
 
-        Insurs {
+        Component {
             id: itemInsurs
-            visible: false
+            Insurs {
+                visible: false
+            }
         }
 
-        Games {
+        Component {
             id: itemGames
-            visible: false
+            Games {
+                visible: false
+            }
         }
 
-        Member {
+        Component {
             id: itemMember
-            visible: false
+            Member {
+                visible: false
+            }
         }
 
         StackView {
@@ -111,8 +123,6 @@ Window {
             height: parent.height - tabFoot.height
             anchors.top: parent.top
             anchors.bottom: tabFoot.top
-            property var home: null
-            initialItem: itemPitchs
         }
 
         FootMenu {

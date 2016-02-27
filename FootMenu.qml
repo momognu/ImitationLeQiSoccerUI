@@ -43,8 +43,10 @@ Rectangle {
                 onClicked: {
                     if(m_curIndex != 0) {
                         m_curIndex = 0
+                        var pitchs = itemPitchs.createObject(stackMain)
+                        pitchs.load()
                         stackMain.clear()
-                        stackMain.push(itemPitchs)
+                        stackMain.push(pitchs)
                         console.log(stackMain.depth)
                     }
                 }
@@ -80,8 +82,9 @@ Rectangle {
                 onClicked: {
                     if(m_curIndex != 1) {
                         m_curIndex = 1
+                        var players = itemPlayers.createObject(stackMain)
                         stackMain.clear()
-                        stackMain.push(itemPlayers)
+                        stackMain.push(players)
                         console.log(stackMain.depth)
                     }
                 }
@@ -117,8 +120,9 @@ Rectangle {
                 onClicked: {
                     if(m_curIndex != 2) {
                         m_curIndex = 2
+                        var insurs = itemInsurs.createObject(stackMain)
                         stackMain.clear()
-                        stackMain.push(itemInsurs)
+                        stackMain.push(insurs)
                         console.log(stackMain.depth)
                     }
                 }
@@ -154,8 +158,9 @@ Rectangle {
                 onClicked: {
                     if(m_curIndex != 3) {
                         m_curIndex = 3
+                        var games = itemGames.createObject(stackMain)
                         stackMain.clear()
-                        stackMain.push(itemGames)
+                        stackMain.push(games)
                         console.log(stackMain.depth)
                     }
                 }
@@ -191,8 +196,9 @@ Rectangle {
                 onClicked: {
                     if(m_curIndex != 4) {
                         m_curIndex = 4
+                        var member = itemMember.createObject(stackMain)
                         stackMain.clear()
-                        stackMain.push(itemMember)
+                        stackMain.push(member)
                         console.log(stackMain.depth)
                     }
                 }

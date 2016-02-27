@@ -6,6 +6,7 @@ Item {
     height: parent.height
     z: 100
     property string m_pitchName: ""
+    property int m_pitchId: 0
     property date m_curDate: new Date()
 
     Rectangle {
@@ -176,6 +177,12 @@ Item {
                                     anchors.centerIn: parent
                                     text: "预定"
                                     font.pointSize: 16
+                                }
+                                MouseArea {
+                                    anchors.fill: parent
+                                    onClicked: {
+                                        console.log("PitchId: " + m_pitchId)
+                                    }
                                 }
                             }
                         }

@@ -1,0 +1,7 @@
+[user]
+    name = xiaoronglv
+    email = xxxxx@gmail.com
+[push]
+    default = matching
+[core]
+    excludesfile = /Users/momognu/.gitignore_global
