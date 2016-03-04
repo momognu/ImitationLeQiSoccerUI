@@ -91,23 +91,5 @@ Item {
                 height: 400/800*itemRegister.height
             }
         }
-<<<<<<< Updated upstream
-=======
-
-        Rectangle {
-            id: rectRegInfo
-            anchors.top: rectRegPhone.bottom
-            anchors.topMargin: 10/800*itemRegister.height
-            anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.width - 20/480*itemRegister.width
-            height: 400/800*itemRegister.height
-            TextField {
-                id: txfUid
-            }
-            TextField {
-                id: txfPwd
-            }
-        }
->>>>>>> Stashed changes
     }
 }

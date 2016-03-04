@@ -30,14 +30,14 @@ Item {
         height: parent.height - itemHead.height - anchors.topMargin
         anchors.topMargin: 10/800*parent.height
         contentWidth: parent.width
-        contentHeight: parent.height + rectRegForm.height
+        contentHeight: parent.height + rectRegPhone.height
 
         Rectangle {
-            id: rectRegForm
+            id: rectRegPhone
             anchors.top: parent.top
+            anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width - 20/480*itemRegister.width
             height: 500
-            anchors.horizontalCenter: parent.horizontalCenter
 
             Image {
                 id: imgLogo
@@ -91,8 +91,6 @@ Item {
                 height: 400/800*itemRegister.height
             }
         }
-<<<<<<< Updated upstream
-=======
 
         Rectangle {
             id: rectRegInfo
@@ -108,6 +106,5 @@ Item {
                 id: txfPwd
             }
         }
->>>>>>> Stashed changes
     }
 }
