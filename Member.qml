@@ -34,25 +34,30 @@ Item {
             anchors.top: parent.top
             anchors.horizontalCenter: parent.horizontalCenter
             Image {
+                z: 1000
+                id: imgHead
                 anchors.centerIn: parent
-                width: 80/480*itemMember.width
+                width: 100/800*itemMember.height
                 height: width
                 source: "images/head.jpg"
             }
             Rectangle {
+                z: 1001
                 id: rectBorder
                 anchors.centerIn: parent
-                width: 120/480*itemMember.width
+                width: 160/800*itemMember.height
                 height: width
-                border.width: 20/480*itemMember.width
+                border.width: 36/800*itemMember.height
                 border.color: "#E14546"
                 color: "#00000000"
-                radius: 90/480*itemMember.width
+                radius: 360/800*itemMember.height
             }
             Text {
+                z: 1002
                 text: g_mcname == "" ? g_mname == "" ? g_mnum : g_mname : g_mcname
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.top: rectBorder.bottom
+                anchors.top: imgHead.bottom
+                anchors.topMargin: 22/480*itemMember.width
                 color: "#ffffff"
                 font.family: "微软雅黑"
                 font.pointSize: 16

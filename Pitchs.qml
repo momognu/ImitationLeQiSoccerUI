@@ -103,8 +103,10 @@ Item {
                 anchors.fill: parent
                 onClicked: {
                     listview.currentIndex = index
-                    itemPitch.m_pitchName = txtName.text
-                    stackMain.push(itemPitch);
+                    var pitch = itemPitch.createObject(parent)
+                    pitch.m_pitchName = txtName.text
+                    pitch.m_pitchId = listview.currentIndex
+                    stackMain.push(pitch);
                 }
             }
 
@@ -258,8 +260,10 @@ Item {
         m_curText: "全部类型"
     }
 
-    Pitch {
+    Component {
         id: itemPitch
-        visible: false
+        Pitch {
+            visible: false
+        }
     }
 }

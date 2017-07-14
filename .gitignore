@@ -1,1 +1,11 @@
+<<<<<<< HEAD
 .user
+=======
+[user]
+    name = xiaoronglv
+    email = xxxxx@gmail.com
+[push]
+    default = matching
+[core]
+    excludesfile = /Users/momognu/.gitignore_global
+>>>>>>> 07ac91cdb7378a3e79e8346e2ab20e680d5dc07e

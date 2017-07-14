@@ -11,7 +11,7 @@ Window {
     property int g_mid: 47//登录后存储用户id
     property int g_mnum: 0//
     property string g_mname: ""//
-    property string g_mcname: "大卫.德赫亚"//
+    property string g_mcname: "曼联大腿"//
     property string g_phone: ""//
     property string g_mColor: "#E14546"//"#7c7c7c"
     property string g_bColor: "#FFE4E1"//"#ebf9ec"
@@ -76,32 +76,44 @@ Window {
 
         Component.onCompleted: {
             console.log(Qt.platform.os)
-            itemPitchs.load()
+            var pitchs = itemPitchs.createObject(itemMain)
+            pitchs.load()
+            stackMain.initialItem = pitchs
         }
 
-        Pitchs {
+        Component {
             id: itemPitchs
-            visible: false
+            Pitchs {
+                visible: false
+            }
         }
 
-        Players {
+        Component {
             id: itemPlayers
-            visible: false
+            Players {
+                visible: false
+            }
         }
 
-        Insurs {
+        Component {
             id: itemInsurs
-            visible: false
+            Insurs {
+                visible: false
+            }
         }
 
-        Games {
+        Component {
             id: itemGames
-            visible: false
+            Games {
+                visible: false
+            }
         }
 
-        Member {
+        Component {
             id: itemMember
-            visible: false
+            Member {
+                visible: false
+            }
         }
 
         StackView {
@@ -111,8 +123,6 @@ Window {
             height: parent.height - tabFoot.height
             anchors.top: parent.top
             anchors.bottom: tabFoot.top
-            property var home: null
-            initialItem: itemPitchs
         }
 
         FootMenu {
